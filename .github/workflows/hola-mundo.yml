@@ -1,0 +1,10 @@
+name: Mi primer workflow #Nombre dle workflow
+run-name:  Estoy aprendiendo GitHub Actions. 
+on: [push] #Evento que lo activa
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest #Maquina en la que correrá
+    steps:
+      - name: Imprimir Hola mundo
+        run: python hola-mundo.py
+    
