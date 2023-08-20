@@ -1,6 +1,9 @@
 name: Mi primer workflow #Nombre dle workflow
 run-name:  Estoy aprendiendo GitHub Actions. 
-on: [push] #Evento que lo activa
+on: 
+  push:
+    branches:
+      - 'aprendiendo-github-actions' #Evento que lo activa
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest #Maquina en la que correrá
