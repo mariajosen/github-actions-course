@@ -2,15 +2,13 @@ name: Contexto
 run-name: Estoy aprendiendo a usar contextos.
 on: 
   push:
-    branches: 
-      - main
-      - aprendiendo-github-actions
+    branches: [main, aprendiendo-github-actions]
     
   workflow_dispatch:
 
 jobs:
   check:
-    if: ${{ github.ref == 'refs/head/aprendiendo-github-actions' }}
+    if: ${{ github.ref == 'refs/heads/aprendiendo-github-actions' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "Desplegando en la rama $GITHUB_REF"
