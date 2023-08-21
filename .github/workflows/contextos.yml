@@ -2,7 +2,9 @@ name: Contexto
 run-name: Estoy aprendiendo a usar contextos.
 on: 
   push:
-    branches: [main, aprendiendo-github-actions]
+    branches: 
+      - main
+      - aprendiendo-github-actions
     
   workflow_dispatch:
 
