@@ -11,4 +11,4 @@ jobs:
     if: ${{ github.ref == 'refs/head/aprendiendo-github-actions' }}
     runs-om: ubuntu-latest
     steps:
-      run: echo "Desplegando en la rama $GITHUB_REF"
+      - run: echo "Desplegando en la rama $GITHUB_REF"
