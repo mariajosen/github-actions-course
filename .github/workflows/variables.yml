@@ -1,0 +1,19 @@
+name: variables
+run-name: Aprendiendo a usar variables
+on: 
+  push:
+  workflow_dispatch:
+env:
+  FULL_NAME: Nieto
+  NAME: ${{ env.NAME }}
+
+jobs:
+  presentacion:
+    runs-on: ubuntu-latest
+    env: 
+      SALUDO: Hola
+    steps:
+      - name: Saludos
+        env: 
+          EDAD: 26
+        run: echo "$SALUDO, soy $NAME $FULL_NAME, y tengo $EDAD"
