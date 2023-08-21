@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 env:
   FULL_NAME: Nieto
-  NAME: ${{ env.NAME }}
+  NAME: ${{ vars.NAME }}
 
 jobs:
   presentacion:
